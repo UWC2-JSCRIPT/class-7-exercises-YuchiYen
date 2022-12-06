@@ -1,0 +1,16 @@
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.invalid {
+    box-shadow: 2px 2px 5px red;
+    background-color:lightpink;
+}
+
+.valid {
+    box-shadow: 2px 2px 5px forestgreen;
+}

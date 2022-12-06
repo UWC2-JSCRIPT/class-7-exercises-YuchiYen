@@ -1,10 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Contact Me</title>
-  </head>
 
-  <body>
-    <!-- TODO -->
-  </body>
+<head>
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="contact-me.css" />
+</head>
+
+<body>
+  <h1>Contact Me</h1>
+  <form id="connect-form" action="">
+    <!-- <div id="errMsgGroup" style="color:red;" class="hidden"></div> -->
+
+    <div>
+      <label for="name">Name</label>      
+      <!-- <input id="name" class="" type="text" name="name" minlength="3" />    -->
+      <input id="name" class="" type="text" /> 
+      <span id="nameError" style="color:red;" class="hidden"></span>
+    </div>
+<br/>
+    <div>
+      <label for="email">Email</label>
+      <input id="email" class="" type="text"/>
+      <span id="emailError" style="color:red;" class="hidden"></span>
+    </div>
+<br/> 
+    <div>
+      <label for="contactReason">Reason for contacting us?</label>
+      <select class="" name="contactReason" id="contactReason">
+        <option value="choose" selected="selected">
+          Choose one
+        </option>
+        <option value="Job">Job opportunity</option>
+        <option value="Talk">Talk code</option>
+      </select>
+    </div>
+    <div class="hidden" id="jobOpportunityDiv">
+      <label for="jobTitle">Job Title</label>
+      
+        <input type="text" id ="jobTitle"> 
+        <span id="jobTitleError" style="color:red;" class="hidden"></span>
+        <br/>
+      <label for="jobUrl">Company Website</label>
+     
+        <input type="url" id="jobUrl">
+        <span id="jobUrlError" style="color:red;" class="hidden"></span>
+    </div>
+    <div class="hidden" id="talkCodeDiv">
+      <label for="codingLanguage">Coding Language</label>
+        <select id="codingLanguage">
+          <option value="Choice" selected="selected">Choose One</option>
+          <option value="JS">JavaScript</option>
+          <option value="HTML">HTML</option>
+          <option value="CS">C#</option>
+          <option value="SQL">SQL</option>
+        </select>
+        <span id="codingLanguageError" style="color:red;" class="hidden"></span>
+
+        <br/>
+     
+      <label for="message" id="messageLabel" class="">Message</label>
+      <!-- <textarea id="message" name="message" rows="5" cols="100" minlength="10"></textarea> -->
+      <textarea id="message" name="message" rows="5" cols="100"></textarea>
+      <span id="messageError" style="color:red;" class="hidden"></span>
+
+    </div>  
+    <br/>
+    <div id="btnDiv">
+      <input class="" type="submit" value="Submit" />
+    </div>
+  </form>
+  <script src="contact-me.js"></script>
+</body>
+
 </html>
